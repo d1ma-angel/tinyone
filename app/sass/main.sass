@@ -1,0 +1,176 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+    color: #666
+    opacity: 1
+
+*:-moz-placeholder
+    color: #666
+    opacity: 1
+
+*::-moz-placeholder
+    color: #666
+    opacity: 1
+
+*:-ms-input-placeholder
+    color: #666
+    opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+    color: #666
+body input:required:valid,
+body textarea:required:valid
+    color: #666
+
+html, body
+    height: 100%
+
+body
+    font-size: 16px
+    min-width: 320px
+    position: relative
+    line-height: 1.75
+    font-family: $default-font
+    overflow-x: hidden
+    opacity: 1
+
+.img-responsive
+    display: block
+    max-width: 100%
+    height: auto
+
+header .row, header .col-md-3, header .pull-right
+    display: flex
+    align-items: center
+
+header
+    width: 100%
+    background-color: $default-colour
+
+header p
+    font-size: 2em
+    font-weight: bold
+    margin-left: 10px
+    color: $header-font-color
+
+header p a
+    color: $header-font-color
+
+header p a:hover
+    color: $header-font-color
+    text-decoration: none
+
+header ul
+    list-style-type: none
+
+header li
+    padding: 0 10px
+    font-size: 1.3em
+    font-weight: bold
+
+header li:last-child
+    padding-right: 0
+
+header li a
+    color: $header-font-color
+    border-bottom: none
+
+header li a:hover
+    border-bottom: 2px solid $header-font-color
+    text-decoration: none
+    transition: border-bottom 0.1s ease-in-out
+    color: $header-font-color
+
+#slider
+    width: 100%
+    background-color: $default-colour
+    padding: 20px 0
+    h2
+        font-size: 2em
+    .slogan
+        font-size: 1.25em
+        line-height: 1.5em
+    .row
+        display: flex
+        align-items: center
+    .fa
+        padding-right: 20px
+    .col-md-5
+        display: flex
+        justify-content: center
+    .col-md-12
+        display: flex
+        justify-content: center
+    .dot
+        width: 15px
+        height: 15px
+        border-radius: 50%
+        background-color: #fff
+        margin: 30px 3px
+        opacity: 0.6
+        :hover
+            opacity: 1
+
+#features
+    width: 100%
+    background-color: #fff
+    padding: 120px 0
+    h2
+        text-align: center
+    .slogan
+        text-align: center
+        margin: 0 0 80px 0
+    .col-md-1
+        text-align: center
+    .title
+        font-size: 1.3em
+        margin: 0 0 10px 0
+    .col-md-3
+        p
+            margin-top: 0
+            line-height: 1.1em
+            span
+                color: $usual-font-color
+                font-size: 0.9em
+                font-weight: 100
+    .second_row
+        margin-top: 60px
+
+#keepintouch
+    width: 100%
+    background-color: #010101
+    padding: 120px 0
+    .container
+        text-align: center
+        h2
+            color: $default-colour
+        .slogan
+            margin: 0 0 40px 0
+            color: $usual-font-color
+        .social
+            margin-top: 60px
+            a
+                margin: 0 10px
+                color: $default-colour 
+            span:hover
+                transition: color 0.5s ease-in-out
+                color: #fff
+footer
+    width: 100%
+    background-color: #010101
+    padding: 0 0 120px 0
+    p
+        color: #fff
+        margin-top: 0
+    a
+        color: #fff
+    a:hover
+        transition: color 0.2s ease-in-out
+        color: $default-colour
+        text-decoration: none
+
+
+@import "media" // Всегда в конце
